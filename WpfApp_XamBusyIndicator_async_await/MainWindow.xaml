@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp_XamBusyIndicator_async_await.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_XamBusyIndicator_async_await"
+        xmlns:igDP="http://infragistics.com/DataPresenter" xmlns:ig="http://schemas.infragistics.com/xaml"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <ig:XamBusyIndicator x:Name="xamBusyIndicator1">
+        <Grid>
+            <StackPanel>
+                <Button x:Name="button1" Content="データ生成" Click="button1_Click"/>
+                <igDP:XamDataGrid x:Name="xamDataGrid1"/>
+            </StackPanel>
+        </Grid>
+    </ig:XamBusyIndicator>
+   
+</Window>
